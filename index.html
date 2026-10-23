@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081629">
+  <meta name="description" content="Una propuesta romántica llena de girasoles, música y recuerdos.">
+  <title>Una pregunta bajo los girasoles 🌻</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
+  <div id="particles" class="particles" aria-hidden="true"></div>
+  <div id="petals" class="petals" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Volver al inicio"><span>✦</span> para alguien especial</a>
+    <button id="musicToggle" class="music-toggle" type="button" aria-label="Reproducir o pausar música">
+      <span id="musicIcon">♫</span><span id="musicLabel">Activar música</span>
+    </button>
+  </header>
+
+  <main>
+    <section id="inicio" class="screen hero active">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> UNA PEQUEÑA SORPRESA <span class="eyebrow-line"></span></div>
+        <h1>Hay algo que<br><em>quiero preguntarte...</em></h1>
+        <p class="hero-copy">Preparé este pequeño rincón del universo pensando en ti. Tómate tu tiempo, respira y acompáñame hasta el final. 💙</p>
+        <button class="primary-button" id="startJourney" type="button">Descubrir mi sorpresa <span>→</span></button>
+        <div class="hero-note"><span class="tiny-sunflower">🌻</span> Una historia que florece con una pregunta.</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="moon"></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="sunflower flower-large">🌻</div>
+        <div class="sunflower flower-small flower-left">🌻</div>
+        <div class="sunflower flower-small flower-right">🌻</div>
+        <div class="sparkle sparkle-a">✦</div><div class="sparkle sparkle-b">✧</div><div class="sparkle sparkle-c">✦</div>
+      </div>
+      <div class="scroll-hint">DESLIZA O COMIENZA <span>↓</span></div>
+    </section>
+
+    <section id="jardin" class="screen section-screen">
+      <div class="section-heading">
+        <span class="section-kicker">01 — UN JARDÍN PARA TI</span>
+        <h2>Si pudiera regalarte<br><em>un lugar...</em></h2>
+        <p>Sería un jardín de girasoles donde siempre hubiera luz, donde las flores siguieran al sol y donde nunca te faltaran motivos para sonreír.</p>
+      </div>
+      <div class="garden" aria-label="Jardín animado de girasoles">
+        <div class="garden-sun">☼</div>
+        <div class="garden-flower gf1">🌻</div><div class="garden-flower gf2">🌻</div>
+        <div class="garden-flower gf3">🌻</div><div class="garden-flower gf4">🌻</div>
+        <div class="garden-flower gf5">🌻</div><div class="garden-flower gf6">🌻</div>
+        <div class="garden-firefly firefly1">✦</div><div class="garden-firefly firefly2">✧</div>
+        <div class="garden-firefly firefly3">✦</div><div class="garden-firefly firefly4">✧</div>
+        <div class="garden-ground"></div>
+      </div>
+      <p class="garden-caption">Como los girasoles buscan la luz, tu te converiste en la luz de todos mis dias. 💛</p>
+      <button class="primary-button next-button" data-next="carta" type="button">Tengo algo que decirte <span>→</span></button>
+    </section>
+
+    <section id="carta" class="screen section-screen">
+      <div class="letter-wrap">
+        <div class="letter-seal">✦</div>
+        <div class="letter-card">
+          <span class="section-kicker">02 — UNA CARTA PARA TI</span>
+          <h2>Unas palabras<br><em>desde el corazón</em></h2>
+          <div id="letterText" class="letter-text">
+            Mi amor, a veces me pongo a pensar en todo lo que hemos vivido juntos y me doy cuenta de lo bonito que ha sido compartir tantos momentos contigo. Cada sonrisa, abrazo, conversación y aventura se ha convertido en un recuerdo que guardo con muchísimo cariño.
+            <br><br>
+            Nunca olvidaré nuestro primer viaje a Baños, las risas, los nervios y todas las emociones que vivimos haciendo rafting y canyoning. Tampoco olvidaré nuestros bailes, tu cumpleaños, nuestras fotografías y esos pequeños momentos que hacen que estar contigo sea tan especial.
+            <br><br>
+            Nuestros primeros anillos de amor también tienen un significado enorme para mí. Más que un detalle,  representan el cariño, los recuerdos y todo lo bonito que hemos construido juntos.
+            <br><br>
+            Quiero seguir viviendo aventuras contigo, conocer nuevos lugares, compartir más risas, abrazarte en los días difíciles y celebrar juntos los momentos felices. Me emociona pensar en todas las historias que todavía nos quedan por escribir.
+            <br><br>
+            Gracias por llegar a mi vida y convertir momentos sencillos en recuerdos inolvidables. Eres mi pedacito de cielo en la tierra y alguien a quien amo muchísimo.
+            <br><br>
+            Por eso preparé esta pequeña sorpresa, con nuestros recuerdos y estos girasoles. Porque hay algo muy especial que quiero preguntarte desde el corazón... 💙🌻
+          </div>
+          <div class="letter-signature">Con cariño, <span>alguien que piensa en ti 💙</span></div>
+        </div>
+      </div>
+      <button class="primary-button next-button" data-next="recuerdos" type="button">Seguir leyendo nuestra historia <span>→</span></button>
+    </section>
+
+    <section id="recuerdos" class="screen section-screen memories-section">
+      <div class="section-heading">
+        <span class="section-kicker">03 — NUESTROS RECUERDOS</span>
+        <h2>Tres instantes,<br><em>tantas emociones...</em></h2>
+        <p>Hay fotos que no solo guardan una imagen: guardan una aventura, una sonrisa y esa felicidad de compartir momentos contigo. Estas son algunas de mis favoritas. 💙</p>
+      </div>
+      <div class="memory-grid">
+        <button class="memory-card" type="button" data-photo="0" aria-label="Ampliar fotografía de nuestra aventura frente a la cascada">
+          <div class="memory-image"><img src="fotos/cascada.jpeg" loading="lazy" alt="Nosotros frente a una cascada iluminada por la noche" width="960" height="1280"></div>
+          <span class="memory-overline">CAPÍTULO 01 · AVENTURAS</span>
+          <span class="memory-title">Nuestra aventura 🌹</span>
+          <span class="memory-subtitle">Los lugares se vuelven inolvidables cuando estoy contigo.</span>
+          <span class="memory-expand">Ver fotografía <span aria-hidden="true">↗</span></span>
+        </button>
+        <button class="memory-card" type="button" data-photo="1" aria-label="Ampliar fotografía nuestra frente al espejo">
+          <div class="memory-image"><img src="fotos/espejo.jpeg" loading="lazy" alt="Una fotografía juntos frente a un espejo" width="899" height="1599"></div>
+          <span class="memory-overline">CAPÍTULO 02 · SONRISAS</span>
+          <span class="memory-title">Un reflejo de nosotros ✨</span>
+          <span class="memory-subtitle">Un instante sencillo que me encanta recordar.</span>
+          <span class="memory-expand">Ver fotografía <span aria-hidden="true">↗</span></span>
+        </button>
+        <button class="memory-card" type="button" data-photo="2" aria-label="Ampliar selfie juntos">
+          <div class="memory-image"><img src="fotos/selfie.jpeg" loading="lazy" alt="Una selfie juntos compartiendo un momento especial" width="899" height="1599"></div>
+          <span class="memory-overline">CAPÍTULO 03 · NOSOTROS</span>
+          <span class="memory-title">Momentos que guardo 💛</span>
+          <span class="memory-subtitle">Porque mis recuerdos favoritos también tienen algo de ti.</span>
+          <span class="memory-expand">Ver fotografía <span aria-hidden="true">↗</span></span>
+        </button>
+      </div>
+      <p class="memory-tip">Toca cualquiera de las fotografías para verla completa. ✨</p>
+      <button class="primary-button next-button" data-next="pregunta" type="button">Hay algo que quiero preguntarte <span>→</span></button>
+    </section>
+
+    <section id="pregunta" class="screen proposal-screen">
+      <div class="proposal-stars" aria-hidden="true">✦　✧　·　✦　·　✧　✦</div>
+      <div class="proposal-bouquet" aria-hidden="true"><span>🌻</span><span>🌻</span><span>🌻</span></div>
+      <span class="section-kicker">04 — EL MOMENTO MÁS IMPORTANTE</span>
+      <h2>Quiero que esta historia<br>tenga la oportunidad de <em>florecer.</em></h2>
+      <p class="proposal-copy">Me gustaría compartir contigo más sonrisas, conversaciones, aventuras y momentos sinceros. Sin prometer perfección, pero sí cariño, respeto y ganas de construir algo bonito, paso a paso.</p>
+      <div class="question-card">
+        <span class="question-small">Y ahora, con todo mi cariño...</span>
+        <h3>¿Quieres ser mi novia? <span>💙</span></h3>
+        <div class="answer-buttons">
+          <button id="yesButton" class="yes-button" type="button">Sí, quiero <span>🌻</span></button>
+          <button id="thinkButton" class="think-button" type="button">Quiero pensarlo con calma</button>
+        </div>
+        <p class="answer-note">Lo más importante es que respondas con el corazón y te sientas cómoda. 💙</p>
+      </div>
+      <div id="answerMessage" class="answer-message" role="status" aria-live="polite"></div>
+    </section>
+
+    <section id="celebration" class="screen celebration-screen">
+      <div class="celebration-flower">🌻</div>
+      <span class="section-kicker">UN NUEVO CAPÍTULO</span>
+      <h2>¡Qué bonito es<br><em>comenzar algo contigo!</em></h2>
+      <p class="celebration-copy">Que esto sea el inicio de muchas conversaciones, risas, detalles, aventuras y recuerdos. Que nunca nos falten la sinceridad, el respeto y las ganas de cuidarnos. 💙</p>
+      <div class="celebration-heart">♡</div>
+      <button id="replayButton" class="primary-button" type="button">Volver a vivir la sorpresa <span>↻</span></button>
+    </section>
+  </main>
+
+  <footer class="footer"><span>Hecho con cariño</span><span class="footer-star">✦</span><span>y un jardín de girasoles 🌻</span></footer>
+
+  <div id="photoLightbox" class="photo-lightbox" role="dialog" aria-modal="true" aria-label="Fotografía ampliada" aria-hidden="true">
+    <button id="closeLightbox" type="button" class="lightbox-close" aria-label="Cerrar fotografía">×</button>
+    <button id="prevPhoto" type="button" class="lightbox-arrow lightbox-prev" aria-label="Fotografía anterior">‹</button>
+    <figure class="lightbox-figure">
+      <img id="lightboxImage" src="fotos/cascada.jpeg" alt="Fotografía ampliada">
+      <figcaption id="lightboxCaption">Nuestra aventura</figcaption>
+    </figure>
+    <button id="nextPhoto" type="button" class="lightbox-arrow lightbox-next" aria-label="Fotografía siguiente">›</button>
+  </div>
+
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="music/musica-romantica.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
